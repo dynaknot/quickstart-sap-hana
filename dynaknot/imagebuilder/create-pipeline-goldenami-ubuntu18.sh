@@ -2,9 +2,9 @@ aws imagebuilder create-component \
     --cli-input-json file://quickstart-sap-hana/dynaknot/components/create-component-update-ubuntu.json
 
 # get component id
-aws imagebuilder list-components
-aws iam list-users --output text --query 'Users[*].[UserName,Arn,CreateDate,PasswordLastUsed,UserId]'
-aws imagebuilder list-components --output text --query 'Users[*].[UserName,Arn,CreateDate,PasswordLastUsed,UserId]'
+#aws imagebuilder list-components
+#aws iam list-users --output text --query 'Users[*].[UserName,Arn,CreateDate,PasswordLastUsed,UserId]'
+#aws imagebuilder list-components --output text --query 'Users[*].[UserName,Arn,CreateDate,PasswordLastUsed,UserId]'
 #aws imagebuilder get-component \
 #    --component-build-version-arn arn:aws:imagebuilder:us-west-2:123456789012:component/component-name/1.0.0/1
 
