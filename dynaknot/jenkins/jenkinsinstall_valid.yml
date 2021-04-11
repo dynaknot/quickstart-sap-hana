@@ -181,7 +181,7 @@
                                             "          client_body_buffer_size 128k;\n",
                                             "        }\n",
                                             "        location /password.txt {\n",
-                                            "          alias              /web/initalpass.html;\n",
+                                            "          alias /web/initalpass.html;\n",
                                             "        }\n",
                                             "   }\n",
                                             "}\n"
