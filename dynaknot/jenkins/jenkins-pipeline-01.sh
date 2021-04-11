@@ -1,8 +1,12 @@
+
+# copy git files to S3 bucket
+aws s3 cp 's3://s3-eu-central-1.amazonaws.com/dynaknot/' . || error_exit 'Failed to download AWS CodeDeploy Agent.'
+
 # create component
-aws imagebuilder create-component \
-    --cli-input-json file://create-component.json
+./quickstart-sap-hana/dynaknot/components/create-component-update-ubuntu.sh
 
 # get component id
+aws imagebuilder list-components
 #aws imagebuilder get-component \
 #    --component-build-version-arn arn:aws:imagebuilder:us-west-2:123456789012:component/component-name/1.0.0/1
 
